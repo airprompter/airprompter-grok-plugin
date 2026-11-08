@@ -35,12 +35,17 @@ plugin.
 
 ## Network endpoints and credentials
 
-- The only network endpoint is the hosted AirPrompter MCP server at
+- The hosted AirPrompter MCP server is at
   `https://mcp.airprompter.com/mcp`, which serves your saved prompts and workflows.
 - It needs your AirPrompter account. Grok Build runs the browser sign-in
   and keeps the resulting token in its own credential store.
 - No credential, client id, scope, or customer identifier is packaged here.
-  The plugin ships no hooks, commands, agents, or scripts.
+- The plugin registers no hooks, commands, or agents. The shared skill bundles
+  optional install and verification scripts. The production skill uses MCP for runs.
+  In development, the install helper uses a single-use AirPrompter install token
+  with `https://api-dev.airprompter.com` and downloads files from
+  `https://d3e65ddf0mnnkp.cloudfront.net`. It verifies files before saving them
+  and does not execute downloaded files.
 
 ## Large results
 
