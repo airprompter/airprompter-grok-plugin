@@ -1,0 +1,20 @@
+{
+  "name": "airprompter",
+  "version": "0.2.3",
+  "description": "Run, create, and improve your saved AirPrompter prompts and workflows from Grok Build. Sign in with your AirPrompter account on first connect.",
+  "author": {
+    "name": "AirPrompter",
+    "url": "https://airprompter.com"
+  },
+  "homepage": "https://airprompter.com",
+  "repository": "https://github.com/airprompter/airprompter-grok-plugin",
+  "license": "MIT",
+  "keywords": [
+    "airprompter",
+    "air prompter",
+    "airprompter workflow",
+    "airprompter skill",
+    "airprompter prompt"
+  ],
+  "logo": "assets/logo.png"
+}
